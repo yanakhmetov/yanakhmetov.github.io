@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Янахметова Романа</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.5;
+            padding: 20px;
+            /* margin-top: 20px; */
+            font-size: 14px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 25px;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            text-wrap: nowrap;
+            /* height: 280px; */
+        }
+
+        .photo-placeholder {
+            margin-top: 10px;
+            width: 50%;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo {
+            width: 140px;
+            height: 160px;
+            border-radius: 5px;
+            object-fit: cover;
+            border: 1px solid #3498db;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            width: 50%;
+        }
+
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .position {
+            font-size: 16px;
+            margin-bottom: 18px;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            opacity: 0.8;
+        }
+
+        .github a {
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #eaecee;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #3498db;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        h3 {
+            margin-top: 12px;
+            color: #34495e;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .skill-tag {
+            background: #edf2f7;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #2d3748;
+        }
+
+        .project {
+            margin-bottom: 18px;
+        }
+
+        .project-links {
+            margin-top: 6px;
+        }
+
+        .project-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 12px;
+            font-size: 13px;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            background: #f1f3f4;
+            color: #6c757d;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .photo-placeholder {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            .header-content {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .position {
+                font-size: 15px;
+            }
+
+            .contact-info {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="photo-placeholder">
+                <img src="https://avatars.githubusercontent.com/u/48621982?s=400&u=ec018d37bc58e3c69d5961e5a224f56a485e6816&v=4"
+                    alt="Фото Янахметов Роман" class="photo">
+            </div>
+            <div class="header-content">
+                <h1>Янахметов Роман</h1>
+                <p class="position">Frontend-разработчик</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>11roma11.89@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+7 (953) 171-37-00</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Санкт-Петербург, Россия</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        <span class="github"><a href="https://github.com/yanakhmetov">github.com/yanakhmetov</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Фронтенд-разработчик с сильной мотивацией развиваться в веб-разработке. Ищу возможность
+                применить свои знания на практике, работать в команде и учиться у опытных коллег.
+                Готов усердно работать и быстро осваивать новые технологии.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <div class="skills-container">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">SCSS</span>
+                <span class="skill-tag">WebSocket</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Адаптивная верстка</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Axios</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">Vite</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">DeepSick</span>
+                <span class="skill-tag">Chat GPT</span>
+                <span class="skill-tag">Rest API</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Учебные проекты</h2>
+
+            <div class="project">
+                <h3>Онлайн - сервис</h3>
+                <p>Одностраничное приложение с предоставлением услуг для развития бизнеса. Реализованы множество CSS
+                    анимаций, форма связи и адаптивность.</p>
+                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite</p>
+                <div class="project-links">
+                    <a href="https://github.com/yanakhmetov/Positivus">Посмотреть код на GitHub</a>
+                    <a href="https://positivus-bcar.vercel.app/">Открыть проект</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Интернет-магазин</h3>
+                <p>Одностраничное приложение с каталогом товаров, корзиной и формой заказа. Реализована фильтрация
+                    товаров и динамическое обновление интерфейса.</p>
+                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite</p>
+                <div class="project-links">
+                    <a href="https://github.com/yanakhmetov/Internet-shop">Посмотреть код на GitHub</a>
+                    <a href="https://internet-shop-mauve.vercel.app/">Открыть проект</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Чат</h3>
+                <p>Онлайн чат на основе WebSocket. Реализованы серверная и клиентская части, форма авторизации, светлая
+                    и темная темы сайта</p>
+                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite, WebSocket, Express</p>
+                <div class="project-links">
+                    <a href="https://github.com/yanakhmetov/Chat">Посмотреть код на GitHub</a>
+                    <a href="https://chat-beta-swart.vercel.app/">Открыть проект</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Виджиты</h3>
+                <p>Веб-приложение для просмотра текущей погоды в выбранном городе, курса криптоволют и поиска фильмов.
+                    Интеграции с открытыми API.</p>
+                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React, REST API, Axios</p>
+                <div class="project-links">
+                    <a href="https://github.com/yanakhmetov/Vidjits">Посмотреть код на GitHub</a>
+                    <a href="https://vidjits.vercel.app/">Открыть проект</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Образование</h2>
+
+            <h3>Высшее образование</h3>
+            <p>Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» им. В.И. Ульянова (Ленина)</p>
+            <p>2016 - 2020 г.</p>
+        </section>
+
+        <section id="languages">
+            <h2>Языки</h2>
+            <ul>
+                <li>Русский - родной</li>
+                <li>Английский - B1 (средний уровень, читаю техническую документацию)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Готов рассмотреть различные форматы работы: полная занятость, частичная занятость, проектная работа</p>
+        </footer>
+    </div>
+</body>
+
+</html>
