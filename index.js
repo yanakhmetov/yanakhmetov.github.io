@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectData = {
         'shopmaster': {
             title: 'ShopMaster',
-            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Framer Motion'],
+            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'Framer Motion'],
             image: 'photo/shopmaster.png',
             details: `
                 <div class="modal-body-text">
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <ul>
                         <li><strong>Vite</strong> — для быстрой сборки (если используется вне Next.js окружения).</li>
                         <li><strong>PostgreSQL Migration</strong> — система миграций Prisma для управления схемой БД.</li>
+                        <li><strong>Docker</strong> — контейнеризация для стабильного развёртывания.</li>
                     </ul>
                     <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Этот список покрывает фундаментальные части приложения: от фронтенда и анимаций до серверной логики, безопасности и работы с данными.</p>
                 </div>
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'trello-clone': {
             title: 'Trello Clone',
-            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'DnD-kit'],
+            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'DnD-kit'],
             image: 'photo/trello-clone.png',
             details: `
                 <div class="modal-body-text">
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'chat-app': {
             title: 'Real-time Chat',
-            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Socket.io', 'Express'],
+            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Socket.io', 'Express', 'Docker'],
             image: 'photo/сhat-app.png',
             details: `
                 <div class="modal-body-text">
