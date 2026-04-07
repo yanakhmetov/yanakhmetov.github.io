@@ -101,7 +101,7 @@
       <h2>Проекты</h2>
       <div class="projects-grid">
         <!-- ShopMaster -->
-        <div class="project-card">
+        <div class="project-card" data-project="shopmaster">
           <div class="project-img">
             <i class="fas fa-shopping-bag"></i>
           </div>
@@ -110,15 +110,18 @@
             <p>Премиальная e-commerce платформа с современным темным дизайном и эффектами Glassmorphism. Реализован полный цикл покупки.</p>
             <div class="tech-stack">
               <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">TypeScript</span>
               <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">NextAuth.js</span>
               <span class="tech-tag">Framer Motion</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/yanakhmetov/shopmaster" target="_blank" class="btn-icon">
                 <i class="fab fa-github"></i> Код
               </a>
-              <a href="#" class="btn-icon">
+              <a href="https://shopmaster-beryl.vercel.app" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
             </div>
@@ -126,7 +129,7 @@
         </div>
 
         <!-- Trello Clone -->
-        <div class="project-card">
+        <div class="project-card" data-project="trello-clone">
           <div class="project-img">
             <i class="fab fa-trello"></i>
           </div>
@@ -134,16 +137,19 @@
             <h3>Trello Clone</h3>
             <p>Приложение для управления проектами. Включает интерактивные доски, списки и задачи с поддержкой Drag & Drop функционала.</p>
             <div class="tech-stack">
-              <span class="tech-tag">React</span>
+              <span class="tech-tag">Next.js</span>
               <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Prisma</span>
               <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">NextAuth.js</span>
               <span class="tech-tag">DnD-kit</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/yanakhmetov/trello-clone" target="_blank" class="btn-icon">
                 <i class="fab fa-github"></i> Код
               </a>
-              <a href="#" class="btn-icon">
+              <a href="https://trello-clone-production-6b27.up.railway.app/" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
             </div>
@@ -151,7 +157,7 @@
         </div>
 
         <!-- Chat App -->
-        <div class="project-card">
+        <div class="project-card" data-project="chat-app">
           <div class="project-img">
             <i class="fas fa-comments"></i>
           </div>
@@ -159,16 +165,20 @@
             <h3>Real-time Chat</h3>
             <p>Мессенджер реального времени с приватными и групповыми чатами. Мгновенная доставка сообщений и индикаторы статуса.</p>
             <div class="tech-stack">
-              <span class="tech-tag">React</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">NextAuth.js</span>
               <span class="tech-tag">Socket.io</span>
               <span class="tech-tag">Express</span>
-              <span class="tech-tag">MongoDB</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/yanakhmetov/сhat-app" target="_blank" class="btn-icon">
+              <a href="https://github.com/yanakhmetov/chat-app" target="_blank" class="btn-icon">
                 <i class="fab fa-github"></i> Код
               </a>
-              <a href="#" class="btn-icon">
+              <a href="https://chat-app-production-9a4b.up.railway.app/" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
             </div>
@@ -200,6 +210,13 @@
       <p>© 2026 Роман Янахметов.</p>
     </footer>
   </main>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 </body>
 
 </html>
