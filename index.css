@@ -499,11 +499,13 @@ body.modal-open {
   /* Убираем фиксированный фон, чтобы браузер мог его напечатать корректно */
   .bg-gradient { position: absolute; }
   
-  /* Гарантируем перенос страниц */
-  section { 
+  /* Гарантируем перенос страниц и видимость */
+  section, .card, .project-card { 
+    opacity: 1 !important;
+    transform: none !important;
     page-break-inside: avoid; 
     break-inside: avoid;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   body { 
     background-color: #0f172a !important; 
