@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'shopmaster': {
             title: 'ShopMaster',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Framer Motion'],
+            image: 'photo/shopmaster.png',
             details: `
                 <div class="modal-body-text">
                     <h4>核心 Стек (Core)</h4>
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'trello-clone': {
             title: 'Trello Clone',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'DnD-kit'],
+            image: 'photo/trello-clone.png',
             details: `
                 <div class="modal-body-text">
                     <h4>核心 Стек (Core)</h4>
@@ -109,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'chat-app': {
             title: 'Real-time Chat',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Socket.io', 'Express'],
+            image: 'photo/сhat-app.png',
             details: `
                 <div class="modal-body-text">
                     <h4>核心 Стек (Core)</h4>
@@ -165,6 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="tech-stack">
                     ${data.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
                 </div>
+            </div>
+            <div class="modal-img-large">
+                <img src="${data.image}" alt="${data.title} Large Screenshot">
             </div>
             ${data.details}
             <div class="modal-footer">

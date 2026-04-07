@@ -404,6 +404,20 @@ h2::after {
   margin-bottom: 0;
 }
 
+.modal-img-large {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.modal-img-large img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .modal-body-text {
   color: var(--text-secondary);
   font-size: 1.1rem;
