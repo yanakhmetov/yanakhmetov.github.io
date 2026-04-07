@@ -493,23 +493,51 @@ body.modal-open {
 }
 
 @media print {
-  /* Скрываем модальные окна при печати */
+  * { 
+    -webkit-print-color-adjust: exact !important; 
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  
   .modal, .close-modal { display: none !important; }
   
-  /* Убираем фиксированный фон, чтобы браузер мог его напечатать корректно */
-  .bg-gradient { position: absolute; }
-  
-  /* Гарантируем перенос страниц и видимость */
-  section, .card, .project-card { 
-    opacity: 1 !important;
-    transform: none !important;
-    page-break-inside: avoid; 
-    break-inside: avoid;
-    margin-bottom: 20px;
+  .bg-gradient { 
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: -1 !important;
+    background-color: #0f172a !important;
+    display: block !important;
   }
-  body { 
-    background-color: #0f172a !important; 
-    -webkit-print-color-adjust: exact; 
-    print-color-adjust: exact;
+  
+  section, .card, .project-card { 
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 25px !important;
+  }
+
+  h1, h2, h3, p, span, li, i {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: white !important;
+  }
+  
+  body, html {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    background-color: #0f172a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 10px !important;
   }
 }
