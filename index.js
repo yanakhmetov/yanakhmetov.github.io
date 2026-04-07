@@ -23,18 +23,42 @@ document.addEventListener('DOMContentLoaded', () => {
         'shopmaster': {
             title: 'ShopMaster',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Framer Motion'],
-            description: 'Инновационная e-commerce платформа с премиальным дизайном.',
             details: `
-                <h4>О проекте</h4>
-                <p>ShopMaster — это полноценное решение для интернет-коммерции, объединяющее эстетику Glassmorphism и мощный функционал.</p>
-                <h4>Ключевые особенности</h4>
-                <ul>
-                    <li>Безопасная авторизация через NextAuth.js (Google и учетные данные).</li>
-                    <li>Полный цикл покупки: каталог, корзина, оформление заказа.</li>
-                    <li>Типизированная работа с БД PostgreSQL через Prisma ORM.</li>
-                    <li>Плавные анимации интерфейса с помощью Framer Motion.</li>
-                    <li>Адаптивный дизайн, идеально работающий на всех устройствах.</li>
-                </ul>
+                <div class="modal-body-text">
+                    <h4>核心 Стек (Core)</h4>
+                    <ul>
+                        <li><strong>Next.js 15.2 (App Router)</strong> — основной фреймворк для SSR и оптимизации.</li>
+                        <li><strong>React 19</strong> — библиотека интерфейсов.</li>
+                        <li><strong>TypeScript</strong> — строгая типизация для надежности кода.</li>
+                    </ul>
+
+                    <h4>База данных и ORM</h4>
+                    <ul>
+                        <li><strong>Prisma 6</strong> — ORM для работы с базой данных (тип-безопасные запросы).</li>
+                        <li><strong>PostgreSQL</strong> — основная реляционная база данных.</li>
+                    </ul>
+
+                    <h4>Аутентификация и Безопасность</h4>
+                    <ul>
+                        <li><strong>NextAuth.js 4.x (с адаптером для Prisma)</strong> — полноценная система входа и сессий.</li>
+                        <li><strong>Bcrypt</strong> — хеширование паролей для защиты данных.</li>
+                    </ul>
+
+                    <h4>Стилизация и UI</h4>
+                    <ul>
+                        <li><strong>Tailwind CSS 3.4</strong> — современный служебный CSS-фреймворк.</li>
+                        <li><strong>PostCSS / Autoprefixer</strong> — автоматическая обработка CSS.</li>
+                        <li><strong>Framer Motion</strong> — продвинутая анимация элементов и переходов.</li>
+                        <li><strong>Heroicons</strong> — набор иконок.</li>
+                    </ul>
+
+                    <h4>Инструменты разработки</h4>
+                    <ul>
+                        <li><strong>Vite</strong> — для быстрой сборки (если используется вне Next.js окружения).</li>
+                        <li><strong>PostgreSQL Migration</strong> — система миграций Prisma для управления схемой БД.</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Этот список покрывает фундаментальные части приложения: от фронтенда и анимаций до серверной логики, безопасности и работы с данными.</p>
+                </div>
             `,
             github: 'https://github.com/yanakhmetov/shopmaster',
             demo: 'https://shopmaster-beryl.vercel.app'
@@ -42,18 +66,42 @@ document.addEventListener('DOMContentLoaded', () => {
         'trello-clone': {
             title: 'Trello Clone',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'DnD-kit'],
-            description: 'Система управления задачами с интерактивным Drag-and-Drop.',
             details: `
-                <h4>О проекте</h4>
-                <p>Высокофункциональный клон Trello для организации рабочего процесса и управления проектами.</p>
-                <h4>Ключевые особенности</h4>
-                <ul>
-                    <li>Интуитивный Drag-and-Drop интерфейс для карточек и колонок.</li>
-                    <li>Создание неограниченного количества досок и списков задач.</li>
-                    <li>Редактирование описаний, меток и статусов в реальном времени.</li>
-                    <li>Оптимизированное состояние приложения с помощью TanStack Query.</li>
-                    <li>Валидация форм и схем данных с использованием Zod и React Hook Form.</li>
-                </ul>
+                <div class="modal-body-text">
+                    <h4>核心 Стек (Core)</h4>
+                    <ul>
+                        <li><strong>Next.js 16.2 (Turbo)</strong> — быстрый фреймворк с поддержкой App Router.</li>
+                        <li><strong>React 19.x</strong> — актуальная версия библиотеки UI.</li>
+                        <li><strong>TypeScript</strong> — типизированный JavaScript для надежной разработки.</li>
+                    </ul>
+
+                    <h4>База данных и ORM</h4>
+                    <ul>
+                        <li><strong>Prisma 6</strong> — эффективная работа с БД (миграции, Studio, типы).</li>
+                        <li><strong>PostgreSQL</strong> — масштабируемая реляционная БД.</li>
+                    </ul>
+
+                    <h4>Аутентификация и Состояние</h4>
+                    <ul>
+                        <li><strong>NextAuth.js 5.0 (Beta)</strong> — современная авторизация с поддержкой Edge.</li>
+                        <li><strong>TanStack Query</strong> — управление серверным состоянием (кэширование, обновления).</li>
+                    </ul>
+
+                    <h4>Интерфейс и Логика</h4>
+                    <ul>
+                        <li><strong>Dnd-kit</strong> — сложная логика перетаскивания (Drag-and-Drop) для карточек и списков.</li>
+                        <li><strong>Tailwind CSS 4.0</strong> — новейшая версия CSS-фреймворка.</li>
+                        <li><strong>Lucide React</strong> — современные векторные иконки.</li>
+                        <li><strong>Zod / React Hook Form</strong> — строгая валидация схем и управление формами.</li>
+                    </ul>
+
+                    <h4>Инфраструктура</h4>
+                    <ul>
+                        <li><strong>Docker / Compose</strong> — контейнеризация для локальной разработки и деплоя.</li>
+                        <li><strong>Railway Deployment</strong> — автоматизированный CI/CD процесс.</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Проект демонстрирует реализацию сложной логики перетаскивания и надежное управление состоянием в реальном времени.</p>
+                </div>
             `,
             github: 'https://github.com/yanakhmetov/trello-clone',
             demo: 'https://trello-clone-production-6b27.up.railway.app/'
@@ -61,18 +109,41 @@ document.addEventListener('DOMContentLoaded', () => {
         'chat-app': {
             title: 'Real-time Chat',
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Socket.io', 'Express'],
-            description: 'Мессенджер реального времени для мгновенного общения.',
             details: `
-                <h4>О проекте</h4>
-                <p>Современный чат, обеспечивающий мгновенный обмен сообщениями и статусами между пользователями.</p>
-                <h4>Ключевые особенности</h4>
-                <ul>
-                    <li>Двусторонняя связь в реальном времени с использованием Socket.io.</li>
-                    <li>Поддержка приватных диалогов и групповых комнат.</li>
-                    <li>Индикаторы "печатает..." и статусы прочтения сообщений.</li>
-                    <li>Сохранение истории переписки в базе данных.</li>
-                    <li>Быстрый и отзывчивый интерфейс, оптимизированный под мобильные устройства.</li>
-                </ul>
+                <div class="modal-body-text">
+                    <h4>核心 Стек (Core)</h4>
+                    <ul>
+                        <li><strong>Next.js 14 / Express</strong> — гибридная архитектура для веб-приложения и сокет-сервера.</li>
+                        <li><strong>Socket.io</strong> — двусторонний обмен данными в реальном времени.</li>
+                        <li><strong>TypeScript</strong> — гарантия стабильности типов в мессенджере.</li>
+                    </ul>
+
+                    <h4>База данных и Кэширование</h4>
+                    <ul>
+                        <li><strong>Prisma 6 / PostgreSQL</strong> — хранение истории сообщений и данных пользователей.</li>
+                        <li><strong>Redis (ioredis)</strong> — ускорение работы и управление сессиями (опционально).</li>
+                    </ul>
+
+                    <h4>Безопасность и Auth</h4>
+                    <ul>
+                        <li><strong>JWT / Bcryptjs</strong> — защищенная авторизация и шифрование паролей.</li>
+                        <li><strong>Zod</strong> — строгая валидация входящих сообщений и схем данных.</li>
+                    </ul>
+
+                    <h4>Интерфейс и Стили</h4>
+                    <ul>
+                        <li><strong>Tailwind CSS 3.4</strong> — адаптивная и быстрая верстка мессенджера.</li>
+                        <li><strong>Autoprefixer/PostCSS</strong> — кроссбраузерная совместимость стилей.</li>
+                        <li><strong>Lucide Icons</strong> — легкие и современные иконки.</li>
+                    </ul>
+
+                    <h4>Деплой и DevOps</h4>
+                    <ul>
+                        <li><strong>Docker</strong> — изоляция среды для запуска Node.js и баз данных.</li>
+                        <li><strong>CI/CD Workflow</strong> — автоматический деплой на Railway платформу.</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Этот чат ориентирован на мгновенную скорость работы и возможность масштабирования через Socket.io серверы.</p>
+                </div>
             `,
             github: 'https://github.com/yanakhmetov/chat-app',
             demo: 'https://chat-app-production-9a4b.up.railway.app/'
@@ -95,15 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${data.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
                 </div>
             </div>
-            <div class="modal-body-text">
-                ${data.details}
-            </div>
+            ${data.details}
             <div class="modal-footer">
                 <a href="${data.github}" target="_blank" class="btn-icon">
-                    <i class="fab fa-github"></i> Исходный код
-                </a>
+                    <i class="fab fa-github"></i>Код на GitHub 
+                 </a>
                 <a href="${data.demo}" target="_blank" class="btn-icon">
-                    <i class="fas fa-external-link-alt"></i> Живое демо
+                    <i class="fas fa-external-link-alt"></i>Демо
                 </a>
             </div>
         `;
