@@ -18,12 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Simple parallax effect for bg-gradient
-    window.addEventListener('mousemove', (e) => {
-        const bg = document.querySelector('.bg-gradient');
-        const x = e.clientX / window.innerWidth;
-        const y = e.clientY / window.innerHeight;
-        
-        bg.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
-    });
 });
