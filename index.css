@@ -491,3 +491,23 @@ body.modal-open {
     gap: 10px;
   }
 }
+
+@media print {
+  /* Скрываем модальные окна при печати */
+  .modal, .close-modal { display: none !important; }
+  
+  /* Убираем фиксированный фон, чтобы браузер мог его напечатать корректно */
+  .bg-gradient { position: absolute; }
+  
+  /* Гарантируем перенос страниц */
+  section { 
+    page-break-inside: avoid; 
+    break-inside: avoid;
+    margin-bottom: 30px;
+  }
+  body { 
+    background-color: #0f172a !important; 
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+  }
+}
