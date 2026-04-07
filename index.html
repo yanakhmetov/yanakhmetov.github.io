@@ -2,441 +2,204 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Янахметова Романа</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.5;
-            padding: 20px;
-            /* margin-top: 20px; */
-            font-size: 14px;
-        }
-
-        .resume-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 25px;
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            text-wrap: nowrap;
-            /* height: 280px; */
-        }
-
-        .photo-placeholder {
-            margin-top: 10px;
-            width: 50%;
-            height: 160px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .photo {
-            width: 140px;
-            height: 160px;
-            border-radius: 5px;
-            object-fit: cover;
-            border: 1px solid #3498db;
-            flex-shrink: 0;
-        }
-
-        .header-content {
-            width: 50%;
-        }
-
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 6px;
-            font-weight: 600;
-        }
-
-        .position {
-            font-size: 16px;
-            margin-bottom: 18px;
-            color: #3498db;
-            font-weight: 500;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .icon {
-            width: 16px;
-            height: 16px;
-            opacity: 0.8;
-        }
-
-        .github a {
-            color: white;
-        }
-
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #eaecee;
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 12px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid #3498db;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        h3 {
-            margin-top: 12px;
-            color: #34495e;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        p {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 8px;
-        }
-
-        .skill-tag {
-            background: #edf2f7;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 13px;
-            color: #2d3748;
-        }
-
-        .project {
-            margin-bottom: 18px;
-        }
-
-        .project-links {
-            margin-top: 6px;
-        }
-
-        .project-links a {
-            color: #3498db;
-            text-decoration: none;
-            margin-right: 12px;
-            font-size: 13px;
-        }
-
-        .project-links a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 12px;
-            background: #f1f3f4;
-            color: #6c757d;
-            font-size: 13px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-
-            }
-
-            .photo-placeholder {
-                margin-bottom: 20px;
-                width: 100%;
-            }
-
-            .header-content {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 22px;
-            }
-
-            .position {
-                font-size: 15px;
-            }
-
-            .contact-info {
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме | Роман Янахметов</title>
+  <meta name="description" content="Портфолио и резюме Frontend-разработчика Романа Янахметова. Специализация на React, Next.js и современных веб-технологиях.">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="resume-container">
-        <header>
-            <div class="photo-placeholder">
-                <img src="https://avatars.githubusercontent.com/u/48621982?s=400&u=ec018d37bc58e3c69d5961e5a224f56a485e6816&v=4"
-                    alt="Фото Янахметов Роман" class="photo">
+  <div class="bg-gradient"></div>
+
+  <main class="container">
+    <header>
+      <div class="photo-container">
+        <img src="https://avatars.githubusercontent.com/u/48621982?s=400&u=ec018d37bc58e3c69d5961e5a224f56a485e6816&v=4"
+          alt="Роман Янахметов" class="photo">
+      </div>
+      <div class="header-info">
+        <h1>Янахметов Роман Юрьевич</h1>
+        <p class="role">Frontend-разработчик</p>
+        <div class="contact-grid">
+          <a href="mailto:yanakhmetov.roman@rambler.ru" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            yanakhmetov.roman@rambler.ru
+          </a>
+          <a href="tel:+79531713700" class="contact-link">
+            <i class="fas fa-phone"></i>
+            +7 (953) 171-37-00
+          </a>
+          <a href="https://t.me/yanakhmetov98" target="_blank" class="contact-link">
+            <i class="fab fa-telegram"></i>
+            @yanakhmetov98
+          </a>
+          <a href="https://github.com/yanakhmetov" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            github.com/yanakhmetov
+          </a>
+          <span class="contact-link">
+            <i class="fas fa-location-dot"></i>
+            Санкт-Петербург, Россия
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>О себе</h2>
+      <p style="color: var(--text-secondary); max-width: 800px;">
+        Frontend-разработчик с глубоким интересом к созданию высокопроизводительных и эстетичных веб-приложений. 
+        Специализируюсь на React-экосистеме. Имею опыт работы над сложными коммерческими проектами (e-commerce), 
+        где успешно интегрировал API и WebSocket, разрабатывал UI-компоненты и оптимизировал производительность. 
+        Постоянно изучаю новые технологии и стремлюсь к написанию чистого, поддерживаемого кода.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Навыки</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript (ES6+)</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">CSS3 / SCSS</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express</span>
+        <span class="skill-tag">Socket.io / WS</span>
+        <span class="skill-tag">Prisma</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Framer Motion</span>
+        <span class="skill-tag">Vite</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Figma</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Опыт работы</h2>
+      <div class="card">
+        <h3>Aura52 | Frontend-разработчик</h3>
+        <span class="period">Июль 2024 — Настоящее время (включая стажировку)</span>
+        <ul style="color: var(--text-secondary); padding-left: 20px;">
+          <li>Разработка и поддержка UI платформы онлайн-торговли на React.</li>
+          <li>Создание масштабируемых UI-компонентов и доработка существующих экранов.</li>
+          <li>Интеграция клиентской части с бэкендом через REST API и WebSocket для обновления данных в реальном времени.</li>
+          <li>Оптимизация производительности приложения и исправление багов.</li>
+          <li>Плотное взаимодействие с backend-разработчиками и дизайнерами в рамках Agile-процессов.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+      <div class="projects-grid">
+        <!-- ShopMaster -->
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <div class="project-content">
+            <h3>ShopMaster</h3>
+            <p>Премиальная e-commerce платформа с современным темным дизайном и эффектами Glassmorphism. Реализован полный цикл покупки.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Framer Motion</span>
             </div>
-            <div class="header-content">
-                <h1>Янахметов Роман Юрьевич</h1>
-                <p class="position">Frontend-разработчик</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <span class="github">
-                            <a href="mailto:yanakhmetov.roman@rambler.ru">yanakhmetov.roman@rambler.ru</a>
-                        </span>
-                    </div>
-                    <div class="contact-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                            </path>
-                        </svg>
-                        <span>+7 (953) 171-37-00</span>
-
-                    </div>
-                    <div class="contact-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            
-                            <path
-                                d="M 20.302734 2.984375 C 20.013769 2.996945 19.748583 3.080055 19.515625 3.171875 C 19.300407 3.256634 18.52754 3.5814726 17.296875 4.0976562 C 16.06621 4.61384 14.435476 5.2982348 12.697266 6.0292969 C 9.2208449 7.4914211 5.314238 9.1361259 3.3125 9.9785156 C 3.243759 10.007156 2.9645852 10.092621 2.65625 10.328125 C 2.3471996 10.564176 2.0039062 11.076462 2.0039062 11.636719 C 2.0039062 12.088671 2.2295201 12.548966 2.5019531 12.8125 C 2.7743861 13.076034 3.0504903 13.199244 3.28125 13.291016 L 3.28125 13.289062 C 4.0612776 13.599827 6.3906939 14.531938 6.9453125 14.753906 C 7.1420423 15.343433 7.9865895 17.867278 8.1875 18.501953 L 8.1855469 18.501953 C 8.3275588 18.951162 8.4659791 19.243913 8.6582031 19.488281 C 8.7543151 19.610465 8.8690398 19.721184 9.0097656 19.808594 C 9.0637596 19.842134 9.1235454 19.868148 9.1835938 19.892578 C 9.191962 19.896131 9.2005867 19.897012 9.2089844 19.900391 L 9.1855469 19.894531 C 9.2029579 19.901531 9.2185841 19.911859 9.2363281 19.917969 C 9.2652427 19.927926 9.2852873 19.927599 9.3242188 19.935547 C 9.4612233 19.977694 9.5979794 20.005859 9.7246094 20.005859 C 10.26822 20.005859 10.601562 19.710937 10.601562 19.710938 L 10.623047 19.695312 L 12.970703 17.708984 L 15.845703 20.369141 C 15.898217 20.443289 16.309604 21 17.261719 21 C 17.829844 21 18.279025 20.718791 18.566406 20.423828 C 18.853787 20.128866 19.032804 19.82706 19.113281 19.417969 L 19.115234 19.416016 C 19.179414 19.085834 21.931641 5.265625 21.931641 5.265625 L 21.925781 5.2890625 C 22.011441 4.9067171 22.036735 4.5369631 21.935547 4.1601562 C 21.834358 3.7833495 21.561271 3.4156252 21.232422 3.2226562 C 20.903572 3.0296874 20.591699 2.9718046 20.302734 2.984375 z M 19.908203 5.1738281 C 19.799442 5.7198576 17.33401 18.105877 17.181641 18.882812 L 13.029297 15.041016 L 10.222656 17.414062 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272368 8.8887854 10.401283 11.664685 8.0058594 13.027344 C 7.8617016 12.96954 5.6973962 12.100458 4.53125 11.634766 C 6.6055146 10.76177 10.161156 9.2658083 13.472656 7.8730469 C 15.210571 7.142109 16.840822 6.4570977 18.070312 5.9414062 C 19.108158 5.5060977 19.649538 5.2807035 19.908203 5.1738281 z M 17.152344 19.025391 C 17.152344 19.025391 17.154297 19.025391 17.154297 19.025391 C 17.154252 19.025621 17.152444 19.03095 17.152344 19.03125 C 17.153615 19.024789 17.15139 19.03045 17.152344 19.025391 z">
-                            </path>
-                        </svg>
-                        <span class="github"><a href="https://t.me/yanakhmetov98">@yanakhmetov98</a></span>
-
-                    </div>
-                    <div class="contact-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <span>Санкт-Петербург, Россия</span>
-                    </div>
-                    <div class="contact-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                        <span class="github"><a href="https://github.com/yanakhmetov">github.com/yanakhmetov</a></span>
-                    </div>
-                </div>
+            <div class="project-links">
+              <a href="https://github.com/yanakhmetov/shopmaster" target="_blank" class="btn-icon">
+                <i class="fab fa-github"></i> Код
+              </a>
+              <a href="#" class="btn-icon">
+                <i class="fas fa-external-link-alt"></i> Демо
+              </a>
             </div>
-        </header>
+          </div>
+        </div>
 
-        <section id="about">
-            <h2>О себе</h2>
-            <p>Frontend-разработчик с опытом разработки на React и создания собственных проектов.
-                Успешно работал в команде над платформой онлайн-торговли, где занимался разработкой UI, интеграцией с
-                API и WebSocket.
-                Параллельно развивался самостоятельно, создав SPA, интерактивные интерфейсы и работал с различными API.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Навыки</h2>
-            <div class="skills-container">
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">SCSS</span>
-                <span class="skill-tag">WebSocket</span>
-                <span class="skill-tag">JavaScript (ES6+)</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Адаптивная верстка</span>
-                <span class="skill-tag">Bootstrap</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Photoshop</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Axios</span>
-                <span class="skill-tag">Express</span>
-                <span class="skill-tag">Vite</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">DeepSick</span>
-                <span class="skill-tag">Chat GPT</span>
-                <span class="skill-tag">Rest API</span>
+        <!-- Trello Clone -->
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fab fa-trello"></i>
+          </div>
+          <div class="project-content">
+            <h3>Trello Clone</h3>
+            <p>Приложение для управления проектами. Включает интерактивные доски, списки и задачи с поддержкой Drag & Drop функционала.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">DnD-kit</span>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Опыт работы</h2>
-
-            <div class="project">
-                <h3>Aura52 | 7 месяцев, включая стажировку</h3>
-                <p> Разрабатывал и поддерживал пользо-вательский интерфейс на React для платформы онлайн-торговли.
-                    Включился в существующий проект, самостоятельно разобрался в архитектуре и кодовой базе.
-                    Создавал новые UI-компоненты, дорабатывал текущие экраны, исправлял баги.
-                    Интегрировал клиентскую часть с бэкендом через REST API, реализовал обновление данных в
-                    реальном времени с использованием WebSocket. Работал в команде с backend-разработчиками и
-                    дизайнерами.</p>
-                <p><strong>Технологии:</strong> React, JavaScript/TypeScript, WebSocket и REST API.</p>
+            <div class="project-links">
+              <a href="https://github.com/yanakhmetov/trello-clone" target="_blank" class="btn-icon">
+                <i class="fab fa-github"></i> Код
+              </a>
+              <a href="#" class="btn-icon">
+                <i class="fas fa-external-link-alt"></i> Демо
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section id="projects">
-            <h2>Проекты</h2>
-
-            <div class="project">
-                <h3>Онлайн-сервис</h3>
-                <p>Одностраничный лендинг с предоставлением услуг для развития бизнеса.
-                    Сайс был сверстан по макету из Figma. Одной из особенностей данного проекта является множество
-                    анимаций CSS, были задействованы такие
-                    инструменты как transition, @keyframes, animation и offset-path.
-                    Сверстана адаптивная сетка под десктоп, планшеты и мобильные устройства.
-                    Разработана модульная структура на React (переиспользуемые компоненты: header, услуги, форма, footer
-                    и др.).
-                    Добавлена интерактивность: плавный скролл, мобильное бургер-меню, валидация формы обратной связи на
-                    JS.
-                    В качестве сборщика использовался Vite для разработки и продакшн-билда.
-                </p>
-                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite</p>
-                <div class="project-links">
-                    <a href="https://github.com/yanakhmetov/Positivus">Посмотреть код на GitHub</a>
-                    <a href="https://positivus-bcar.vercel.app/">Открыть проект</a>
-                </div>
+        <!-- Chat App -->
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="project-content">
+            <h3>Real-time Chat</h3>
+            <p>Мессенджер реального времени с приватными и групповыми чатами. Мгновенная доставка сообщений и индикаторы статуса.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
             </div>
-
-            <div class="project">
-                <h3>Интернет-магазин</h3>
-                <p>Одностраничное веб-приложение с каталогом товаров, корзиной и формой заказа. Главная страница
-                    отображает каталог товаров,
-                    а именно книги с обложкой, жанром, ценой. В проекте реализованна выбор книг по жанру через
-                    выпадающий список и поиск по названию
-                    в реальном времени (фильтрация на стороне клиента).
-                    По клику на карточку книги выпадает ее подробное описание, стоимость и кнопка добавления в корзину.
-                    В корзине реализованы добавление/удаление позиций, увеличение/уменьшение количества книг, расчёт
-                    общей стоимости.
-                    Сайт имеет адаптивную верстку под мобильную, планшетную и десктопную версии. Весь проект реализован
-                    на React с использованием
-                    классовой структуры. В проекте использовались методы жизненого цикла для управления состояния
-                    компонентов. В качестве сборщика использовался Vite.
-                </p>
-                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite</p>
-                <div class="project-links">
-                    <a href="https://github.com/yanakhmetov/Internet-shop">Посмотреть код на GitHub</a>
-                    <a href="https://internet-shop-mauve.vercel.app/">Открыть проект</a>
-                </div>
+            <div class="project-links">
+              <a href="https://github.com/yanakhmetov/сhat-app" target="_blank" class="btn-icon">
+                <i class="fab fa-github"></i> Код
+              </a>
+              <a href="#" class="btn-icon">
+                <i class="fas fa-external-link-alt"></i> Демо
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="project">
-                <h3>Чат</h3>
-                <p>Онлайн-чат на основе WebSocket. Проект представляет собой простой чат в реальном времени.
-                    Реализованна форма для уникальности имен в чате перед тем, как в него добавиться.
-                    Чтобы пользователям было удобно, добавлены светлая и темная темы сайта.
-                    Серверная часть проекта построена на базе Express с использование библиотеки Socket.IO и
-                    отвечает за обработку новых подключений и разрывов соединения, рассылку сообщений всем активным
-                    пользователям,
-                    хранение истории сообщений в памяти сервера.
-                    Клиентская часть в свою очередь осуществляет подключение к WebSocket-серверу, позволяет делать
-                    отправку сообщений в реальном времени, отображает
-                    ленту сообщений с автоматической прокруткой вниз,
-                    показывает список подключенных пользователей.
-                    Сайт адаптирован под мобильные, планшетные и десктопные устройста. Проет написан с помощью
-                    библиотеке React на функциональных компонентах с использованием
-                    хуков UseState и UseEffect. Для хранение временных данных использовался LocalStorage.
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      <section id="education" style="margin-bottom: 0;">
+        <h2>Образование</h2>
+        <div class="card" style="margin-bottom: 0;">
+          <h3>СПбГЭТУ «ЛЭТИ»</h3>
+          <p style="color: var(--text-secondary);">Бакалавриат, Факультет радиотехники и телекоммуникаций</p>
+          <span class="period">2016 — 2020</span>
+        </div>
+      </section>
 
-                </p>
-                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React + Vite, WebSocket, Express</p>
-                <div class="project-links">
-                    <a href="https://github.com/yanakhmetov/Chat">Посмотреть код на GitHub</a>
-
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Виджеты</h3>
-                <p>Одностраничное веб-приложение (SPA), представляющее собой дашборд (информационную панель) с тремя
-                    интерактивными виджетами.
-                    Проект демонстрирует работу с внешними API, управление состоянием, асинхронные запросы,
-                    автодополнение (autocomplete) и адаптивный дизайн.
-                    Виджет Погода (WeatherWidget) использует API - OpenWeatherMap и отображает температуру, описание,
-                    ветер, влажность, давление, видимость. Реализован поиск погоды по названию города.
-                    Есть автодополнение городов через Geocoding API (при вводе от 2 символов). Используются
-                    Debounce-запросы (800 мс) для оптимизации.
-                    Виджет Криптовалюты (CryptoWidget) использует API - CoinGecko и отображенает курсы Bitcoin,
-                    Ethereum, Litecoin в USD. Показывает изменения цены за 24 часа (зелёный/красный цвет, стрелки).
-                    Автообновление происходит каждые 2 минуты.
-                    Виджет Поиск фильмов (MovieSearchWidget) использует API - OMDB (Open Movie Database) и отображает
-                    список фильмов. Поиск фильмов
-                    происходит по названию, в качестве стартового запроса стоит "Harry Potter". Присутствует
-                    горизонтальный слайдер с карточками фильмов и автодополнение с постерами фильмов.
-                    Используются Debounce-запросы 500 мс для основного поиска, 300 мс для подсказок.
-                    Весь проект реализован на React c использованием функциональных компонетов и хуков useState,
-                    useEffect, useRef.
-                </p>
-                <p><strong>Технологии:</strong> HTML, CSS, JavaScript, React, REST API, Axios</p>
-                <div class="project-links">
-                    <a href="https://github.com/yanakhmetov/Vidjits">Посмотреть код на GitHub</a>
-                    <a href="https://vidjits.vercel.app/">Открыть проект</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Образование</h2>
-
-            <h3>Высшее образование</h3>
-            <p>Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» им. В.И. Ульянова (Ленина)</p>
-            <p>Бакалавриат ФРТ (Факультет радиотехники и телекоммуникаций) </p>
-            <p>2016 - 2020 г.</p>
-        </section>
-
-        <section id="languages">
-            <h2>Языки</h2>
-            <ul>
-                <li>Русский - родной</li>
-                <li>Английский - B1 (средний уровень, читаю техническую документацию)</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Готов рассмотреть различные форматы работы: полная занятость, частичная занятость, проектная работа</p>
-        </footer>
+      <section id="languages" style="margin-bottom: 0;">
+        <h2>Языки</h2>
+        <div class="card" style="margin-bottom: 0;">
+          <p style="margin-bottom: 5px;"><strong>Русский:</strong> Родной</p>
+          <p style="color: var(--text-secondary);"><strong>Английский:</strong> B1 (Intermediate)</p>
+        </div>
+      </section>
     </div>
+
+    <footer style="text-align: center; margin-top: 80px; color: var(--text-secondary); font-size: 0.9rem; padding: 20px; border-top: 1px solid var(--glass-border);">
+      <p>© 2024 Роман Янахметов. Создано с ❤️ и фокусом на UX.</p>
+    </footer>
+  </main>
 </body>
 
 </html>
