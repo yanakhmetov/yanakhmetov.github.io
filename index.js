@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Этот чат ориентирован на мгновенную скорость работы и возможность масштабирования через Socket.io серверы.</p>
                 </div>
             `,
-            github: 'https://github.com/yanakhmetov/shish-bish',
+            github: 'https://github.com/yanakhmetov/ShishBishGame',
             demo: 'https://shishbishgame-production.up.railway.app'
         }
     };
