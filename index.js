@@ -151,6 +151,49 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             github: 'https://github.com/yanakhmetov/chat-app',
             demo: 'https://chat-app-production-9a4b.up.railway.app/'
+        },
+        'shish-bish': {
+            title: 'Shish-Bish',
+            tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'Socket.io', 'Express'],
+            image: 'photo/shish-bish.png',
+            details: `
+                <div class="modal-body-text">
+                    <h4>核心 Стек (Core)</h4>
+                    <ul>
+                        <li><strong>Next.js 15 / Express</strong> — гибридная архитектура для веб-приложения и сокет-сервера.</li>
+                        <li><strong>Socket.io</strong> — двусторонний обмен данными в реальном времени.</li>
+                        <li><strong>TypeScript</strong> — гарантия стабильности типов в мессенджере.</li>
+                    </ul>
+
+                    <h4>База данных и Кэширование</h4>
+                    <ul>
+                        <li><strong>Prisma 7 / PostgreSQL</strong> — хранение истории сообщений и данных пользователей.</li>
+                        <li><strong>Redis (ioredis)</strong> — ускорение работы и управление сессиями (опционально).</li>
+                    </ul>
+
+                    <h4>Безопасность и Auth</h4>
+                    <ul>
+                        <li><strong>JWT / Bcryptjs</strong> — защищенная авторизация и шифрование паролей.</li>
+                        <li><strong>Zod</strong> — строгая валидация входящих сообщений и схем данных.</li>
+                    </ul>
+
+                    <h4>Интерфейс и Стили</h4>
+                    <ul>
+                        <li><strong>Tailwind CSS</strong> — адаптивная и быстрая верстка мессенджера.</li>
+                        <li><strong>Autoprefixer/PostCSS</strong> — кроссбраузерная совместимость стилей.</li>
+                        <li><strong>Lucide Icons</strong> — легкие и современные иконки.</li>
+                    </ul>
+
+                    <h4>Деплой и DevOps</h4>
+                    <ul>
+                        <li><strong>Docker</strong> — изоляция среды для запуска Node.js и баз данных.</li>
+                        <li><strong>CI/CD Workflow</strong> — автоматический деплой на Railway платформу.</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Этот чат ориентирован на мгновенную скорость работы и возможность масштабирования через Socket.io серверы.</p>
+                </div>
+            `,
+            github: 'https://github.com/yanakhmetov/shish-bish',
+            demo: 'https://shishbishgame-production.up.railway.app'
         }
     };
 
