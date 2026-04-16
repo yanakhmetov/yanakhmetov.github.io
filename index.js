@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'photo/shopmaster.png',
             details: `
                 <div class="modal-body-text">
-                    <h4>核心 Стек (Core)</h4>
+                    <h4>Стек (Core)</h4>
                     <ul>
                         <li><strong>Next.js 15.2 (App Router)</strong> — основной фреймворк для SSR и оптимизации.</li>
                         <li><strong>React 19</strong> — библиотека интерфейсов.</li>
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'photo/trello-clone.png',
             details: `
                 <div class="modal-body-text">
-                    <h4>核心 Стек (Core)</h4>
+                    <h4>Стек (Core)</h4>
                     <ul>
                         <li><strong>Next.js 16.2 (Turbo)</strong> — быстрый фреймворк с поддержкой App Router.</li>
                         <li><strong>React 19.x</strong> — актуальная версия библиотеки UI.</li>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'photo/сhat-app.png',
             details: `
                 <div class="modal-body-text">
-                    <h4>核心 Стек (Core)</h4>
+                    <h4>Стек (Core)</h4>
                     <ul>
                         <li><strong>Next.js 14 / Express</strong> — гибридная архитектура для веб-приложения и сокет-сервера.</li>
                         <li><strong>Socket.io</strong> — двусторонний обмен данными в реальном времени.</li>
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'photo/shish-bish.png',
             details: `
                 <div class="modal-body-text">
-                    <h4>核心 Стек (Core)</h4>
+                    <h4>Стек (Core)</h4>
                     <ul>
                         <li><strong>Next.js 15 / Express</strong> — гибридная архитектура для веб-приложения и сокет-сервера.</li>
                         <li><strong>Socket.io</strong> — двусторонний обмен данными в реальном времени.</li>
