@@ -25,6 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'Framer Motion'],
             image: 'photo/shopmaster.png',
             details: `
+            <div class="modal-body-text">
+                    <h4>Описание</h4>
+                    <p>E-commerce платформа с современным дизайном и интуитивно понятным интерфейсом. Реализован полный цикл покупки.</p>
+                </div>
+                <div class="modal-body-text">
+                    <h4>Что было сделано</h4>
+                    <ul>
+                        <li><strong>Разработал каталог товаров с фильтрацией по категориям и динамической подгрузкой (Next.js App Router).</li>
+                        <li><strong>Создал корзину с сохранением состояния в localStorage и управлением количеством товаров.</li>
+                        <li><strong>Реализовал плавную анимацию интерфейса: появление карточек, модальные окна, переходы между страницами.</li>
+                        <li><strong>Настроил адаптивную верстку с акцентом на удобство использования (Tailwind CSS).</li>
+                        <li><strong>Проект задеплоен на Vercel.</li>
+                        <li><strong>Интегрировал NextAuth.js для авторизации и хранения истории заказов.</li>
+                    </ul>
+                </div>
                 <div class="modal-body-text">
                     <h4>Стек (Core)</h4>
                     <ul>
@@ -70,6 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'DnD-kit'],
             image: 'photo/trello-clone.png',
             details: `
+             <div class="modal-body-text">
+                    <h4>Описание</h4>
+                    <p>Приложение для управления проектами. Включает интерактивные доски, списки и задачи с поддержкой Drag & Drop функционала.</p>
+                </div>
+                <div class="modal-body-text">
+                    <h4>Что было сделано</h4>
+                    <ul>
+                        <li><strong>Спроектировал переиспользуемую систему досок и карточек с Drag-and-Drop (dnd-kit).</li>
+                        <li><strong>Реализовал оптимистичные обновления UI без перезагрузки страницы.</li>
+                        <li><strong>Настроил адаптивную верстку для мобильных устройств.</li>
+                        <li><strong>Проект задеплоен на Railway.</li>
+                        <li><strong>Результат: интерфейс повторяет 80% логики Trello за 3 недели.</li>
+                    </ul>
+                </div>
                 <div class="modal-body-text">
                     <h4>Стек (Core)</h4>
                     <ul>
@@ -115,6 +144,20 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'photo/сhat-app.png',
             details: `
                 <div class="modal-body-text">
+                    <h4>Описание</h4>
+                    <p>Мессенджер реального времени с приватными и групповыми чатами. Мгновенная доставка сообщений и индикаторы статуса.</p>
+                </div>
+                <div class="modal-body-text">
+                    <h4>Что было сделано</h4>
+                    <ul>
+                        <li><strong>Разработал мессенджер с приватными и групповыми чатами.</li>
+                        <li><strong>Настроил индикаторы «печатает» и статус «прочитано».</li>
+                        <li><strong>Использовал Zustand для управления состоянием комнат.</li>
+                        <li><strong>Проект задеплоен на Railway.</li>
+                        <li><strong>Результат: задержка сообщения < 200 мс.</li>
+                    </ul>
+                </div>
+                <div class="modal-body-text">
                     <h4>Стек (Core)</h4>
                     <ul>
                         <li><strong>Next.js 14 / Express</strong> — гибридная архитектура для веб-приложения и сокет-сервера.</li>
@@ -157,6 +200,21 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind CSS', 'PostgreSQL', 'NextAuth.js', 'Docker', 'Socket.io', 'Express'],
             image: 'photo/shish-bish.png',
             details: `
+                <div class="modal-body-text">
+                    <h4>Описание</h4>
+                    <p>Многопользовательская настольная игра в реальном времени с поддержкой WebSocket (Socket.io).</p>
+                </div>
+                <div class="modal-body-text">
+                    <h4>Что было сделано</h4>
+                    <ul>
+                        <li><strong>Реализовал клиент-серверное приложение реального времени.</li>
+                        <li><strong>Настроил WebSocket-соединение через Socket.io с обработкой отвала связи.</li>
+                        <li><strong>Написал типизированные API-роуты на Next.js + Prisma.</li>
+                        <li><strong>Проект задеплоен на Railway.</li>
+                        <li><strong>Результат: приложение готово к 10+ одновременным комнатам.</li>
+                    </ul>
+                </div>
+
                 <div class="modal-body-text">
                     <h4>Стек (Core)</h4>
                     <ul>
@@ -239,9 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event Listeners for Project Cards
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('click', (e) => {
-            // Don't open modal if a link was clicked
-            if (e.target.closest('.btn-icon')) return;
-            
+            // Don't open modal if an external link (a tag) was clicked
+            if (e.target.closest('a')) return;
+
             const projectId = card.getAttribute('data-project');
             openModal(projectId);
         });

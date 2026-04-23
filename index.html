@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Резюме | Роман Янахметов</title>
-  <meta name="description" content="Портфолио и резюме Frontend-разработчика Романа Янахметова. Специализация на React, Next.js и современных веб-технологиях.">
+  <meta name="description"
+    content="Портфолио и резюме Frontend-разработчика Романа Янахметова. Специализация на React, Next.js и современных веб-технологиях.">
   <link rel="stylesheet" href="index.css">
   <script src="index.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="bg-gradient"></div>
-
   <main class="container">
     <header>
       <div class="photo-container">
@@ -23,6 +22,9 @@
       <div class="header-info">
         <h1>Янахметов Роман Юрьевич</h1>
         <p class="role">Frontend-разработчик</p>
+        <p class="about-summary">Готов к офферу Junior Frontend Developer. Ищу позицию в Санкт-Петербурге (гибрид /
+          офис). Владею React / Next.js на уровне уверенного пет-проекта + стажировки. Понимаю CI/CD, Git Flow, базовое
+          тестирование. Легко нахожу общий язык в команде.</p>
         <div class="contact-grid">
           <a href="mailto:yanakhmetov.roman@rambler.ru" class="contact-link">
             <i class="fas fa-envelope"></i>
@@ -50,10 +52,10 @@
 
     <section id="about">
       <h2>О себе</h2>
-      <p style="color: var(--text-secondary); max-width: 800px;">
-        Frontend-разработчик с глубоким интересом к созданию высокопроизводительных и эстетичных веб-приложений. 
-        Специализируюсь на React-экосистеме. Есть опыт работы над коммерческим проектом. 
-        Постоянно изучаю новые технологии и стремлюсь к написанию чистого, поддерживаемого кода.
+      <p style="text-align: justify;">
+        Frontend-разработчик с глубоким интересом к созданию высокопроизводительных и функциональных веб-приложений.
+        Специализируюсь на React-экосистеме. Есть опыт работы над коммерческим проектом.
+        Стремлюсь к написанию чистого, поддерживаемого кода и постоянному развитию.
       </p>
     </section>
 
@@ -89,11 +91,12 @@
       <div class="card">
         <h3>Aura52 | Frontend-разработчик</h3>
         <span class="period">Июль 2025 (стажировка 3 месяца)</span>
-        <ul style="color: var(--text-secondary); padding-left: 20px;">
-          <li>Разработка и поддержка UI-компонентов на React.</li>
-          <li>Интеграция клиентской части с бэкендом через REST API.</li>
-          <li>Оптимизация производительности приложения и исправление багов.</li>
-          <li>Взаимодействовал с backend-разработчиками и дизайнерами.</li>
+        <ul>
+          <li>Разрабатывал UI-компоненты по макетам Figma.</li>
+          <li>Интегрировал REST API, обрабатывал состояния загрузки и ошибок.</li>
+          <li>Оптимизировал повторные рендеры через useMemo и React.memo.</li>
+          <li>Участвовал в ежедневных стендапах и код-ревью в GitLab.</li>
+          <li>Исправил 7 багов в legacy-коде.</li>
         </ul>
       </div>
     </section>
@@ -101,6 +104,7 @@
     <section id="projects">
       <h2>Проекты</h2>
       <div class="projects-grid">
+
         <!-- Shish-Bish -->
         <div class="project-card" data-project="shish-bish">
           <div class="project-img">
@@ -108,7 +112,8 @@
           </div>
           <div class="project-content">
             <h3>Shish-Bish</h3>
-            <p>Многопользовательская настольная игра в реальном времени с современным "Glassmorphism" дизайном и поддержкой Socket.io.</p>
+            <p>Многопользовательская настольная игра в реальном времени с поддержкой Socket.io и динамическим
+              интерфейсом.</p>
             <div class="tech-stack">
               <span class="tech-tag">Next.js</span>
               <span class="tech-tag">TypeScript</span>
@@ -127,9 +132,44 @@
               <a href="https://shishbishgame-production.up.railway.app" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
+              <button class="btn-icon btn-details">
+                Подробнее
+              </button>
             </div>
           </div>
         </div>
+
+        <!-- ShopMaster -->
+        <div class="project-card" data-project="shopmaster">
+          <div class="project-img">
+            <img src="photo/shopmaster.png" alt="ShopMaster Project Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>ShopMaster</h3>
+            <p>E-commerce платформа с функциональным интерфейсом и современным дизайном. Реализован полный цикл покупки.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">NextAuth.js</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Framer Motion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yanakhmetov/shopmaster" target="_blank" class="btn-icon">
+                <i class="fab fa-github"></i> Код
+              </a>
+              <a href="https://shopmaster-beryl.vercel.app" class="btn-icon">
+                <i class="fas fa-external-link-alt"></i> Демо
+              </a>
+              <button class="btn-icon btn-details">
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Trello Clone -->
         <div class="project-card" data-project="trello-clone">
@@ -138,7 +178,8 @@
           </div>
           <div class="project-content">
             <h3>Trello Clone</h3>
-            <p>Приложение для управления проектами. Включает интерактивные доски, списки и задачи с поддержкой Drag & Drop функционала.</p>
+            <p>Приложение для управления проектами. Включает интерактивные доски, списки и задачи с поддержкой Drag &
+              Drop функционала.</p>
             <div class="tech-stack">
               <span class="tech-tag">Next.js</span>
               <span class="tech-tag">TypeScript</span>
@@ -156,6 +197,9 @@
               <a href="https://trello-clone-production-6b27.up.railway.app/" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
+              <button class="btn-icon btn-details">
+                Подробнее
+              </button>
             </div>
           </div>
         </div>
@@ -167,7 +211,8 @@
           </div>
           <div class="project-content">
             <h3>Real-time Chat</h3>
-            <p>Мессенджер реального времени с приватными и групповыми чатами. Мгновенная доставка сообщений и индикаторы статуса.</p>
+            <p>Мессенджер реального времени с приватными и групповыми чатами. Мгновенная доставка сообщений и индикаторы
+              статуса.</p>
             <div class="tech-stack">
               <span class="tech-tag">Next.js</span>
               <span class="tech-tag">TypeScript</span>
@@ -186,58 +231,34 @@
               <a href="https://chat-app-production-9a4b.up.railway.app/" class="btn-icon">
                 <i class="fas fa-external-link-alt"></i> Демо
               </a>
+              <button class="btn-icon btn-details">
+                Подробнее
+              </button>
             </div>
           </div>
         </div>
-        <!-- ShopMaster -->
-        <div class="project-card" data-project="shopmaster">
-          <div class="project-img">
-            <img src="photo/shopmaster.png" alt="ShopMaster Project Screenshot">
-          </div>
-          <div class="project-content">
-            <h3>ShopMaster</h3>
-            <p>Премиальная e-commerce платформа с современным темным дизайном и эффектами Glassmorphism. Реализован полный цикл покупки.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Prisma</span>
-              <span class="tech-tag">NextAuth.js</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Framer Motion</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/yanakhmetov/shopmaster" target="_blank" class="btn-icon">
-                <i class="fab fa-github"></i> Код
-              </a>
-              <a href="https://shopmaster-beryl.vercel.app" class="btn-icon">
-                <i class="fas fa-external-link-alt"></i> Демо
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-      <section id="education" style="margin-bottom: 0;">
-        <h2>Образование</h2>
-        <div class="card" style="margin-bottom: 0;">
-          <h3>СПбГЭТУ «ЛЭТИ»</h3>
-          <p style="color: var(--text-secondary);">Бакалавриат, Факультет радиотехники и телекоммуникаций</p>
-          <span class="period">2016 — 2020</span>
-        </div>
-      </section>
+    <section id="education">
+      <h2>Образование</h2>
+      <div class="card">
+        <h3>СПбГЭТУ «ЛЭТИ»</h3>
+        <p>Бакалавриат, Факультет радиотехники и телекоммуникаций</p>
+        <span class="period">2016 — 2020</span>
+      </div>
+    </section>
 
-      <section id="languages" style="margin-bottom: 0;">
-        <h2>Языки</h2>
-        <div class="card" style="margin-bottom: 0;">
-          <p style="margin-bottom: 5px;"><strong>Русский:</strong> Родной</p>
-          <p style="color: var(--text-secondary);"><strong>Английский:</strong> B2 (Upper-Intermediate)</p>
-        </div>
-      </section>
-    </div>
+    <section id="languages">
+      <h2>Языки</h2>
+      <div class="card">
+        <p><strong>Русский:</strong> Родной</p>
+        <p><strong>Английский:</strong> B1 (Intermediate)</p>
+      </div>
+    </section>
 
-    <footer style="text-align: center; margin-top: 80px; color: var(--text-secondary); font-size: 0.9rem; padding: 20px; border-top: 1px solid var(--glass-border);">
+    <footer class="footer">
       <p>© 2026 Янахметов Роман.</p>
     </footer>
   </main>
